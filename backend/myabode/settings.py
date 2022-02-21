@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'accounts',
     'realtors',
     'listings',
+    'contacts',
 ]
 
 MIDDLEWARE = [
@@ -88,7 +89,7 @@ DATABASES = {
         'NAME': '',
         'USER': '',
         'PASSWORD': '',
-        'HOST': '',
+        'HOST': 'localhost',
         
     }
 }
