@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'myabode.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'myabode',
+        'USER': 'postgres',
+        'PASSWORD': 'guitar123',
         'HOST': 'localhost',
         
     }
