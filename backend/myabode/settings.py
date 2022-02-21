@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'accounts',
+    'realtors',
+    'listings',
 ]
 
 MIDDLEWARE = [
@@ -83,9 +85,9 @@ WSGI_APPLICATION = 'myabode.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('NAME'),
-        'USER': env('USER'),
-        'PASSWORD': env('PASSWORD'),
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
         
     }
