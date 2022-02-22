@@ -3,8 +3,10 @@ User = get_user_model()
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import permissions
+from rest_framework.authentication import TokenAuthentication
 
 class SignupView(APIView):
+    authentication_classes = [TokenAuthentication] 
     permission_classes = (permissions.AllowAny, )
 
     def post(self, request, format=None):
