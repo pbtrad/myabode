@@ -12,6 +12,7 @@ import Layout from "./hocs/Layout";
 import { Provider } from 'react-redux';
 import store from "./store";
 import './sass/main.scss';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const App = () => (
   <Provider store={store}>
