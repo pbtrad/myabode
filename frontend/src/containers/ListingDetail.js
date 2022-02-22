@@ -1,9 +1,9 @@
 import React from "react";
 
-const listingDetail = () => {
+const listingDetail = () => (
     <div>
         listingDetail
     </div>
-};
+);
 
 export default listingDetail;

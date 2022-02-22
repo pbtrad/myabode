@@ -9,6 +9,7 @@ import Login from "./containers/Login";
 import SignUp from "./containers/SignUp";
 import NotFound from "./components/NotFound";
 import Layout from "./hocs/Layout";
+import './sass/main.scss';
 
 const App = () => (
   <Router>
@@ -21,7 +22,8 @@ const App = () => (
         <Route exact path='/listings/:id' element={<ListingDetail/>} />
         <Route exact path='/login' element={<Login/>} />
         <Route exact path='/signup' element={<SignUp/>} />
-        <Route element={NotFound} />
+        <Route exact path='*' element={<NotFound/>} />
+        
       </Routes>
     </Layout>
   </Router>
