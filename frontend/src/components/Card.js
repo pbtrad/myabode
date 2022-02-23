@@ -13,7 +13,7 @@ const card = (props) => {
             <div className='card__header'>
                 <img className='card__header__photo' src={props.photo_main} alt='House' />
             </div>
-            <p className='card__location'>{props.address}, {props.city}, {props.state}</p>
+            <p className='card__location'>{props.address}, {props.city}, {props.county}</p>
             <div className='row'>
                 <div className='col-2-of-3'>
                     <p className='card__info'>Price: €{numberWithCommas(props.price)}</p>
