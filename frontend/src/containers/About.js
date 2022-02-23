@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import axios from 'axios';
-import House from '../assets/images/house100.jpg';
+import House from '../assets/images/house100.jpeg';
 
 const About = () => {
     const [topSeller, setTopSeller] = useState([]);
