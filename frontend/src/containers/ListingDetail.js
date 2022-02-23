@@ -7,13 +7,14 @@ const ListingDetail = (props) => {
     const [listing, setListing] = useState({});
     const [realtor, setRealtor] = useState({});
     const [price, setPrice] = useState(0);
+    const { id } = useParams();
 
     const numberWithCommas = (x) => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     };
 
     useEffect(() => {
-        const slug = props.match.params.id;
+        const slug = (id);
 
         const config = {
             headers: {
@@ -29,7 +30,7 @@ const ListingDetail = (props) => {
         .catch(err => {
 
         });
-    }, [props.match.params.id]);
+    }, [id]);
 
     useEffect(() => {
         const id = listing.realtor;
