@@ -39,7 +39,7 @@ const Home = () => {
                 <title>MyAbode - Home</title>
                 <meta
                     name='description'
-                    content='Realest Estate Home Page'
+                    content='MyAbode Home Page'
                 />
             </Helmet>
             <section className='home__form'>
