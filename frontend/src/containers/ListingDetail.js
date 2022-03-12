@@ -277,7 +277,7 @@ const ListingDetail = (props) => {
     return (
         <div className='listingdetail'>
             <Helmet>
-                <title>Realest Estate - Listing | {`${listing.title}`}</title>
+                <title>MyAbode - Listing | {`${listing.title}`}</title>
                 <meta
                     name='description'
                     content='Listing detail'
@@ -285,7 +285,7 @@ const ListingDetail = (props) => {
             </Helmet>
             <div className='listingdetail__header'>
                 <h1 className='listingdetail__title'>{listing.title}</h1>
-                <p className='listingdetail__location'>{listing.city}, {listing.state}, {listing.zipcode}</p>
+                <p className='listingdetail__location'>{listing.city}, {listing.county}, {listing.zipcode}</p>
             </div>
             <div className='row'>
                 <div className='listingdetail__breadcrumb'>
