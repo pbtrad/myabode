@@ -19,10 +19,10 @@ const navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
     return (
         <Fragment>
-            <nav className='navbar'>
+            <nav className='navbar p-0'>
                 <div className='navbar__top'>
                     <div className='navbar__top__logo'>
-                        <Link className='navbar__top__logo__link' to='/'>MyAbode</Link>
+                        <Link className='navbar__top__logo__link' to='/myabode/'>MyAbode</Link>
                     </div>
                     <div className='navbar__top__auth'>
                         { !loading && (<Fragment>{ isAuthenticated ? authLinks : guestLinks }</Fragment>) }
@@ -30,7 +30,7 @@ const navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
                 </div>
                 <div className='navbar__bottom'>
                     <li className='navbar__bottom__item'>
-                        <NavLink className='navbar__bottom__item__link' to='/'>Home</NavLink>
+                        <NavLink className='navbar__bottom__item__link' to='/myabode/'>Home</NavLink>
                     </li>
                     <li className='navbar__bottom__item'>
                         <NavLink className='navbar__bottom__item__link' to='/listings'>Listings</NavLink>
