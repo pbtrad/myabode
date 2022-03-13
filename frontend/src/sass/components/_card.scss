@@ -2,6 +2,7 @@
     padding: 4rem 3rem;
     background-color: $color-grey-light;
     border-radius: 0.5rem;
+    
 
     &__header {
         width: 100%;
@@ -33,16 +34,19 @@
         font-size: 1.6rem;
         color: $color-green;
         margin-bottom: 0.5rem;
+        white-space: nowrap;
     }
 
     &__hometype {
         font-size: 1.6rem;
         color: $color-tertiary;
         margin-bottom: 0.5rem;
+        white-space: nowrap;
     }
 
     &__sqft {
         font-size: 1.4rem;
+        white-space: nowrap;
     }
 
     &__link {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
+import ModalImage from "react-modal-image";
 
 const ListingDetail = (props) => {
     const [listing, setListing] = useState({});
@@ -61,7 +62,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_1 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_1} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_1} large={listing.photo_1} alt='' />
                             </div>
                         ) : null
                     }
@@ -70,7 +71,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_2 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_2} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_2} large={listing.photo_2} alt='' />
                             </div>
                         ) : null
                     }
@@ -79,7 +80,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_3 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_3} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_3} large={listing.photo_3}alt='' />
                             </div>
                         ) : null
                     }
@@ -93,7 +94,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_4 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_4} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_4} large={listing.photo_4} alt='' />
                             </div>
                         ) : null
                     }
@@ -102,7 +103,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_5 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_5} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_5} large={listing.photo_5} alt='' />
                             </div>
                         ) : null
                     }
@@ -111,7 +112,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_6 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_6} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_6} large={listing.photo_6} alt='' />
                             </div>
                         ) : null
                     }
@@ -125,7 +126,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_7 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_7} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_7} large={listing.photo_7} alt='' />
                             </div>
                         ) : null
                     }
@@ -134,7 +135,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_8 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_8} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_8} large={listing.photo_8} alt='' />
                             </div>
                         ) : null
                     }
@@ -143,7 +144,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_9 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_9} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_9} large={listing.photo_9} alt='' />
                             </div>
                         ) : null
                     }
@@ -157,7 +158,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_10 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_10} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_10} large={listing.photo_10} alt='' />
                             </div>
                         ) : null
                     }
@@ -166,7 +167,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_12 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_11} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_11} large={listing.photo_11} alt='' />
                             </div>
                         ) : null
                     }
@@ -175,7 +176,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_12 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_12} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_12} large={listing.photo_12} alt='' />
                             </div>
                         ) : null
                     }
@@ -189,7 +190,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_13 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_13} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_13} large={listing.photo_13} alt='' />
                             </div>
                         ) : null
                     }
@@ -198,7 +199,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_14 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_14} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_14} large={listing.photo_14} alt='' />
                             </div>
                         ) : null
                     }
@@ -207,7 +208,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_15 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_15} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_15} large={listing.photo_15} alt='' />
                             </div>
                         ) : null
                     }
@@ -221,7 +222,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_16 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_16} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_16} large={listing.photo_16} alt='' />
                             </div>
                         ) : null
                     }
@@ -230,7 +231,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_17 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_17} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_17} large={listing.photo_17} alt='' />
                             </div>
                         ) : null
                     }
@@ -239,7 +240,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_18 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_18} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_18} large={listing.photo_18} alt='' />
                             </div>
                         ) : null
                     }
@@ -253,7 +254,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_19 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_19} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_19} large={listing.photo_19} alt='' />
                             </div>
                         ) : null
                     }
@@ -262,7 +263,7 @@ const ListingDetail = (props) => {
                     {
                         listing.photo_20 ? (
                             <div className='listingdetail__display'>
-                                <img className='listingdetail__display__image' src={listing.photo_20} alt='' />
+                                <ModalImage className='listingdetail__display__image' small={listing.photo_20} large={listing.photo_20} alt='' />
                             </div>
                         ) : null
                     }

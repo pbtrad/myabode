@@ -20,13 +20,13 @@ const card = (props) => {
                     <p className='card__info'>Bedrooms: {props.bedrooms}</p>
                     <p className='card__info'>Bathrooms: {props.bathrooms}</p>
                 </div>
-                <div className='col-1-of-3'>
+                <div className='col-1-of-3 no-wrap'>
                     <p className='card__saletype'>{props.sale_type}</p>
                     <p className='card__hometype'>{props.home_type}</p>
                     <p className='card__sqft'>Sqft: {props.sqft}</p>
                 </div>
             </div>
-            <Link className='card__link' to={`/listings/${props.slug}`}>View Listing</Link>
+            <Link className='card__link text-center' to={`/listings/${props.slug}`}>View Listing</Link>
         </div>
     );
 };
