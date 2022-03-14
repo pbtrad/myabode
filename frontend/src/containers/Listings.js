@@ -127,7 +127,7 @@ const Listings = () => {
                 {displayListings()}
             </section>
             <section className='listings__pagination'>
-                <div className='row'>
+                <div className='row' key={listings.id}>
                     <Pagination
                         itemsPerPage={3}
                         count={count}
